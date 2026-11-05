@@ -7,15 +7,14 @@
 3. **O que significa sobrescrever um método?**
    É mudar um método pai pra funcionar diferente na filha.
 
+# Diagrama sobre heranaça Cliente Pessoa Fisica e Juridica
 ```mermaid
-Funcionario <|-- FuncionarioCLT
-Funcionario <|-- FuncionarioPJ
 classDiagram
     class Funcionario {
         #string nome
         #string documento
         #float valorBase
-
+        
         +__construct(string nome, string documento, float valorBase)
         +getNome() string
         +getDocumento() string
@@ -26,15 +25,20 @@ classDiagram
     class FuncionarioCLT {
         -float beneficios
         -float descontos
-
         +__construct(string nome, string documento, float salarioBruto, float beneficios, float descontos)
         +calcularPagamento() float
     }
 
     class FuncionarioPJ {
         -int horasTrabalhadas
-        
         +__construct(string nome, string documento, float valorHora, int horasTrabalhadas)
         +calcularPagamento() float
     }
+
+    Funcionario <|-- FuncionarioCLT
+    Funcionario <|-- FuncionarioPJ
 ```
+
++publico: todos e qualquer lugar do código
+-privado: somente pela propria classe
+#protegido: pela propria classe e pelos filhos/netos
