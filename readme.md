@@ -4,6 +4,12 @@ Repositório dedicado aos estudos, exercícios e conceitos práticos da discipli
 
 ---
 
+## Conceito
+
+Programação Orientada a Objetos (POO) é um paradigma de programação que organiza o código em torno de "objetos" — estruturas que unem dados (atributos) e comportamentos (métodos), aproximando o software do mundo real. Este repositório reúne atividades práticas desenvolvidas em aula utilizando os pilares fundamentais da POO (Abstração, Encapsulamento, Herança e Polimorfismo) e contratos via Interfaces.
+
+---
+
 ## 📌 Conteúdo do Repositório
 
 Neste repositório você encontrará exemplos práticos e atividades focados nos pilares da POO:
